@@ -1,210 +1,2200 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/base-and-block.css">
-    <link rel="stylesheet" href="assets/css/index.css">
-    <!-- <link rel="stylesheet" href="assets/css/blind.css"> -->
-    <title>МБДОУ ДС №56 «Улыбка»</title>
-</head>
-<body>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
-    <header class="header">
-        <div class="container">
-            <div class="header__wrapper">
+		<link rel="icon" href="assets/img/favicon.298cef19.ico" type="image/x-icon" >
+		<link rel="icon" href="assets/img/favicon.b3fbf381.png" type="image/png" >
 
-                <a href="index.html" class="header__logo"><img src="assets/img/logo.70c35712.jpg" alt=""></a>
+		<link rel="stylesheet" href="assets/css/slider.f5279d0b.css" >
+		<link rel="stylesheet" href="assets/css/main.d95b3cf6.css" >
 
-                <div class="header__menu" data-header="menu">
+		<link rel="stylesheet" href="assets/css/fonts.efa8cefd.css" >
 
-                    <nav class="header__nav">
-                        <lu class="header__list">
+		<meta name="description" content="Washing machine repair">
 
-                            <!-- item-1 -->
-                            <li class="header__list-item header__list-item_active">
-                                <a href="index.html">Главная</a>
-                            </li>
+		<title>Washing machine repair</title>
+		<style>
+			.hide {
+				display: none !important;
+			}
+			@media (min-width: 1001px) {
+				.item-selected {
+					margin-bottom: 50px !important;
+				}
+				.item-selected_2 {
+					margin-bottom: 50px !important;
+				}
+			}
+			@media (max-width: 1000px) {
+				.carousel__slide {
+					width: 180% !important;
+				}
+			}
+			.navbar__social-tel .choise__link-get:hover {
+				color: #d21341;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Modal -->
+		<section class="modalbox" id="modalbox" style="display: none">
+			<!-- <div class="container"> -->
+				<div class="modalbox__content">
+					<div class="modalbox__intro">
+						<div class="modalbox__head">
+							<h1>Enter your phone number</h1>
+							<button class="get__popup modalbox__close-item" onclick="modalbox()">
+								<img src="assets/img/cross.fa34e17b.svg" alt="close" style="width: 20px">
+							</button>
+						</div>
+						<form action="#" method="POST">
+							<input
+								placeholder="+1 000 000 00 00"
+								type="tel"
+								class="telephone__id modalbox__input"
+								name="user__phone"
+								required
+							>
+							<button class="modal__send btn__red">
+								to send
+							</button>
+							<div class="modalbox__subtitle">
+								<input
+									type="checkbox"
+									name="modalbox__subtitle"
+									id="modalbox__subtitle"
+									checked
+								>
+								<label for="myCheckbox"></label>
+								<p>
+									Consent checkbox for personal data
+									processing: I agree to the processing of my
+									personal data in accordance with the Privacy
+									Policy
+								</p>
+							</div>
+						</form>
+					</div>
+				</div>
+			<!-- </div> -->
+		</section>
 
-                            <!-- item-2 -->
-                            <li class="header__list-item">
-                                <a href="about.html">О нас</a>
-                            </li>
+		<header>
+			<img src="assets/img/fon-1-min.c4dd5782.webp" alt="master" class="header__fon" >
+			<div class="container">
+				<div class="head">
+					<div class="logo">
+						<img src="assets/img/logo.ab400fda.svg" alt="logo" >
+						<p>
+							washing
+							<span class="mob-warp">
+								machine <br >
+								repair</span
+							>
+						</p>
+					</div>
+					<nav>
+						<div class="head_tel">
+							<img src="assets/img/tel.88d54cb1.svg" alt="phone" >
+							<a href="#">+1 800 624 43 43</a>
+						</div>
+						<a href="#" class="watt"
+							><img src="assets/img/ws.e4db4c27.svg" alt="whatsapp"
+						></a>
+					</nav>
+				</div>
+				<h2 class="main-title">
+					Same-day
+					<span style="color: #219be0">
+						washing <br >machine repair <br
+					></span>
+					with <span style="color: #219be0">guarantee</span>
+				</h2>
+				<div class="head_fon_mob">
+					<!-- <img
+						loading="lazy"
+						src="assets/img/fon_head.54ac0a84.webp"
+						alt="master"
+						class="head_fon_mob filter"
+					> -->
+				</div>
+				<div class="navigation">
+					<div class="but">
+						<button type="button" onclick="modalbox()">
+							Call a<br >technician
+						</button>
+					</div>
+					<div class="cards">
+						<div class="card">
+							<img src="assets/img/hero-1.9b312185.svg" alt="call">
+							<p>Free service call and diagnostics</p>
+						</div>
+						<div class="card">
+							<img src="assets/img/hero-2.06654973.svg" alt="discount">
+							<p>17% off your first visit</p>
+						</div>
+						<div class="card">
+							<img src="assets/img/hero-3.ebce2487.svg" alt="point" >
+							<p>Serving all of Texas, including Austin</p>
+						</div>
+						<div class="card finish">
+							<img src="assets/img/hero-4.3e2571db.svg" alt="shield" >
+							<p>
+								Payment under contract with a one-year warranty
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
 
-                            <!-- item-3 -->
-                            <li class="header__list-item">
-                                <a href="program.html">Программа</a>
-                            </li>
+		<main>
+			<section class="block_cards">
+				<div class="container">
+					<h2>
+						Why do
+						<span style="color: rgba(33, 155, 224, 1)">
+							homeowners</span
+						>
+						<br >
+						across
+						<span style="color: rgba(33, 155, 224, 1)"> Texas</span>
+						choose us?
+					</h2>
+					<div class="strel">
+						<img src="assets/img/strel.cd89e6e9.svg" alt="arrows" >
+					</div>
+					<div class="cards_work">
+						<div class="work_card first">
+							<div class="card_head">
+								<div class="top">
+									<div class="line"></div>
+									<img
+										src="assets/img/block-1.9aa3234c.svg"
+										alt="24 hours"
+									>
+									<div class="line"></div>
+								</div>
+							</div>
+							<div class="card_main">
+								<p class="title">
+									Fast and Reliable<br >Service
+								</p>
+								<p class="txt">
+									We guarantee our expert ETA within 24 hours
+									of your call.
+								</p>
+							</div>
+						</div>
+						<div class="work_card">
+							<div class="card_head">
+								<div class="top">
+									<div class="line"></div>
+									<img
+										src="assets/img/block-2.4ec1184e.svg"
+										alt="coin"
+									>
+									<div class="line"></div>
+								</div>
+							</div>
+							<div class="card_main">
+								<p class="title">Transparent<br >Pricing</p>
+								<p class="txt">
+									Prices from $70 with no hidden fees. You
+									know the repair cost upfront.
+								</p>
+							</div>
+						</div>
+						<div class="work_card">
+							<div class="card_head">
+								<div class="top">
+									<div class="line"></div>
+									<img
+										src="assets/img/block-3.4e8d2c7f.svg"
+										alt="magnifying glass"
+									>
+									<div class="line"></div>
+								</div>
+							</div>
+							<div class="card_main">
+								<p class="title">
+									Free Diagnostics and<br >Check-out
+								</p>
+								<p class="txt">
+									No hidden fees. You get the cost of repair
+									upfront.
+								</p>
+							</div>
+						</div>
+						<div class="work_card first_2">
+							<div class="card_head">
+								<div class="top">
+									<div class="line"></div>
+									<img
+										src="assets/img/block-4.674aa64d.svg"
+										alt="discount"
+									>
+									<div class="line"></div>
+								</div>
+							</div>
+							<div class="card_main">
+								<p class="title">
+									Discount<br >for New Clients
+								</p>
+								<p class="txt">
+									Get a 17% discount on your first service
+									call. We care about our new customers.
+								</p>
+							</div>
+						</div>
+						<div class="work_card">
+							<div class="card_head">
+								<div class="top">
+									<div class="line"></div>
+									<img
+										src="assets/img/block-5.f90e0257.svg"
+										alt="master"
+									>
+									<div class="line"></div>
+								</div>
+							</div>
+							<div class="card_main">
+								<p class="title">
+									Experienced and<br >Certified Technicians:
+								</p>
+								<p class="txt">
+									All our experts are licensed and certified,
+									regularly enhancing their qualifications.
+								</p>
+							</div>
+						</div>
+						<div class="work_card">
+							<div class="card_head">
+								<div class="top">
+									<div class="line"></div>
+									<img
+										src="assets/img/block-6.b7268ed6.svg"
+										alt="warranty"
+									>
+									<div class="line"></div>
+								</div>
+							</div>
+							<div class="card_main">
+								<p class="title">Repair<br >Warranty:</p>
+								<p class="txt">
+									We provide a one-year warranty on all
+									completed work.
+								</p>
+							</div>
+						</div>
+						<div class="work_card">
+							<div class="card_head">
+								<div class="top">
+									<div class="line"></div>
+									<img
+										src="assets/img/block-7.5410a91e.svg"
+										alt="country"
+									>
+									<div class="line"></div>
+								</div>
+							</div>
+							<div class="card_main">
+								<p class="title">
+									Convenience<br >and Accessibility:
+								</p>
+								<p class="txt">
+									We serve the entire state of Texas,
+									including Austin, with a flexible schedule.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="but_rad mob_but_rad">
+						<button>Schedule a Free Diagnostic</button>
+					</div>
+				</div>
+			</section>
 
-                            <!-- item-4 -->
-                            <li class="header__list-item">
-                                <a href="faq.html">Вопросы</a>
-                            </li>
+			<section class="block_cards two">
+				<div class="container">
+					<h2 class="title2">
+						How We Work: <br ><span
+							style="color: rgba(33, 155, 224, 1)"
+						>
+							Your Step-by-Step Guide</span
+						>
+					</h2>
+					<div class="strel">
+						<img src="assets/img/strel.cd89e6e9.svg" alt="arrows" >
+					</div>
+					<div class="cards_step cards_work">
+						<div class="step_card first">
+							<div class="step_head">
+								<div>
+									<img
+										src="assets/img/Step-01.8a3de871.webp"
+										alt="number 1"
+										class="step"
+									>
+								</div>
+								<img
+									src="assets/img/right-arrow.1947a403.svg"
+									alt="right arrow"
+									class="vector"
+								>
+							</div>
+							<div class="step_main">
+								<h3>Application and Consultation:</h3>
+								<p>
+									Submit a request on our website or call our
+									toll-free number. Our consultant will
+									contact you within 5 minutes to clarify
+									details and schedule a visit.
+								</p>
+							</div>
+							<!-- <div class="boll_rad">
+							<div class="boll"></div>
+							<div class="radius rad-1"></div>
+						</div> -->
+						</div>
+						<div class="step_card first">
+							<div class="step_head">
+								<div>
+									<img
+										src="assets/img/Step-02.381187d1.webp"
+										alt="number 2"
+										class="step"
+									>
+								</div>
+								<img
+									src="assets/img/right-arrow.1947a403.svg"
+									alt="right arrow"
+									class="vector"
+								>
+							</div>
+							<div class="step_main">
+								<h3>
+									Preparing <br >
+									for the Visit
+								</h3>
+								<p>
+									Before the visit, we will send you a text
+									and an email with information about the
+									technician, including their name and the
+									estimated time of arrival.
+								</p>
+							</div>
+							<!-- <div class="boll_rad">
+							<div class="boll"></div>
+							<div class="radius rad-1"></div>
+						</div> -->
+						</div>
+						<div class="step_card first">
+							<div class="step_head">
+								<div>
+									<img
+										src="assets/img/Step-03.c0a39c0c.webp"
+										alt="number 3"
+										class="step"
+									>
+								</div>
+								<img
+									src="assets/img/right-arrow.1947a403.svg"
+									alt="right arrow"
+									class="vector"
+								>
+							</div>
+							<div class="step_main">
+								<h3>
+									Free <br >
+									Diagnostic
+								</h3>
+								<p>
+									The technician will conduct a full
+									diagnostic of the washing machine, detect
+									the problem, and propose the best repair
+									options with a cost-effective approach.
+								</p>
+							</div>
+							<!-- <div class="boll_rad">
+							<div class="boll"></div>
+							<div class="radius rad-1"></div>
+						</div> -->
+						</div>
+						<div class="step_card first">
+							<div class="step_head">
+								<div>
+									<img
+										src="assets/img/Step-04.3e3fab3d.webp"
+										alt="number 4"
+										class="step"
+									>
+								</div>
+								<img
+									src="assets/img/right-arrow.1947a403.svg"
+									alt="right arrow"
+									class="vector"
+								>
+							</div>
+							<div class="step_main">
+								<h3>
+									Transparent <br >
+									Repair Plan
+								</h3>
+								<p>
+									You decide what works to include in the
+									repair plan. We start the repair only with
+									your full agreement on the plan, terms, and
+									cost.
+								</p>
+							</div>
+							<!-- <div class="boll_rad">
+							<div class="boll"></div>
+							<div class="radius rad-1"></div>
+						</div> -->
+						</div>
+						<div class="step_card first">
+							<div class="step_head">
+								<div>
+									<img
+										src="assets/img/Step-05.9c3958f6.webp"
+										alt="number 5"
+										class="step"
+									>
+								</div>
+								<img
+									src="assets/img/right-arrow.1947a403.svg"
+									alt="right arrow"
+									class="vector"
+								>
+							</div>
+							<div class="step_main">
+								<h3>
+									Repair <br >
+									Execution
+								</h3>
+								<p>
+									Our expert will use only certified parts and
+									modern tools for the repair, which usually
+									takes no more than a few hours.
+								</p>
+							</div>
+							<!-- <div class="boll_rad">
+							<div class="boll"></div>
+							<div class="radius rad-1"></div>
+						</div> -->
+						</div>
+						<div class="step_card first">
+							<div class="step_head">
+								<div>
+									<img
+										src="assets/img/Step-06.497bc9f9.webp"
+										alt="number 6"
+										class="step"
+									>
+								</div>
+								<img
+									src="assets/img/right-arrow.1947a403.svg"
+									alt="right arrow"
+									class="vector"
+								>
+							</div>
+							<div class="step_main">
+								<h3>Inspection and Testing</h3>
+								<p>
+									After the fix, the technician will perform a
+									full test of the washing machine to ensure
+									it works perfectly.
+								</p>
+							</div>
+							<!-- <div class="boll_rad">
+							<div class="boll"></div>
+							<div class="radius rad-1"></div>
+						</div> -->
+						</div>
+						<div class="step_card first">
+							<div class="step_head">
+								<div>
+									<img
+										src="assets/img/Step-07.11788132.webp"
+										alt="number 7"
+										class="step"
+									>
+								</div>
+								<img
+									src="assets/img/right-arrow.1947a403.svg"
+									alt="right arrow"
+									class="vector"
+								>
+							</div>
+							<div class="step_main">
+								<h3>
+									Warranty <br >
+									and Support
+								</h3>
+								<p>
+									You receive a warranty certificate for the
+									completed work. If you have any questions or
+									additional needs, our support service is
+									always available.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="but_rad">
+						<button>Start with a Free Diagnostic</button>
+					</div>
+				</div>
+			</section>
 
-                            <!-- item-5 -->
-                            <li class="header__list-item">
-                                <a href="contact.html">Контакты</a>
-                            </li>
+			<section class="price">
+				<div class="container">
+					<div class="price__content">
+						<div class="price__intro">
+							<h2 class="title__main title3">
+								Clear Repair Pricing:<span
+									style="color: rgba(33, 155, 224, 1)"
+								>
+									Find the Solution to Your Problem</span
+								>
+							</h2>
+							<div class="strel">
+								<img src="assets/img/strel.cd89e6e9.svg" alt="arrows" >
+							</div>
+							<p class="base__subtitle">
+								We strive for complete transparency in our
+								pricing. Below, you will find a detailed list of
+								issues with your washing machine and the
+								corresponding service prices. All prices include
+								the cost of parts and labor.
+							</p>
+						</div>
+						<div class="price__table">
+							<div class="price__content">
+								<table>
+									<thead>
+										<tr>
+											<th class="table_top-left-td"></th>
+											<th style="color: #219be0">Issue
+											</th>
+											<th>Diagnostic Work </th>
+											<th
+												class="table_top-right-td"
+												style="color: #219be0; border-right: none;"
+											>
+												Price
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr
+											class="get__price-popup"
+											onclick="ym(96823870, 'reachGoal', 'button_10'); return true;"
+										>
+											<td>
+												<img
+													src="assets/img/price-1.f5cee29a.svg"
+													alt="turn on"
+												>
+											</td>
+											<td class="">
+												Won't <br >
+												Turn On
+											</td>
+											<td>Power check, motor, etc.</td>
+											<td>
+												From
+												<span
+													style="
+														color: rgba(
+															33,
+															155,
+															224,
+															1
+														);
+													"
+													>$100</span
+												>
+											</td>
+										</tr>
+										<tr
+											class="get__price-popup"
+											onclick="ym(96823870, 'reachGoal', 'button_11'); return true;"
+										>
+											<td class="table__td">
+												<img
+													src="assets/img/price-2.bec89c42.svg"
+													alt="drops"
+												>
+											</td>
+											<td>Leaking </td>
+											<td>
+												Seal replacement, pump repair,
+												etc. 
+											</td>
+											<td class="table__right-td">
+												From
+												<span
+													style="
+														color: rgba(
+															33,
+															155,
+															224,
+															1
+														);
+													"
+													>$100</span
+												>
+											</td>
+										</tr>
+										<tr
+											class="get__price-popup"
+											onclick="ym(96823870, 'reachGoal', 'button_12'); return true;"
+										>
+											<td>
+												<img
+													src="assets/img/price-3.44313dcf.svg"
+													alt="spin arrow"
+												>
+											</td>
+											<td>
+												Won't <br >
+												Spin
+											</td>
+											<td>
+												Drive repair/replacement,
+												electronics repair, etc.
+											</td>
+											<td>
+												From
+												<span
+													style="
+														color: rgba(
+															33,
+															155,
+															224,
+															1
+														);
+													"
+													>$100</span
+												>
+											</td>
+										</tr>
+										<tr
+											class="get__price-popup"
+											onclick="ym(96823870, 'reachGoal', 'button_13'); return true;"
+										>
+											<td class="table__td">
+												<img
+													src="assets/img/price-4.975c75cc.svg"
+													alt="echo"
+												>
+											</td>
+											<td>
+												Vibration <br >
+												or Noise
+											</td>
+											<td>
+												Drum balancing, bearing
+												replacement, etc. 
+											</td>
+											<td class="table__right-td">
+												From
+												<span
+													style="
+														color: rgba(
+															33,
+															155,
+															224,
+															1
+														);
+													"
+													>$100</span
+												>
+											</td>
+										</tr>
+										<tr
+											class="get__price-popup"
+											onclick="ym(96823870, 'reachGoal', 'button_14'); return true;"
+										>
+											<td>
+												<img
+													src="assets/img/price-5.11945fb9.svg"
+													alt="error"
+												>
+											</td>
+											<td class="name__problem">
+												Error <br >
+												on Display
+											</td>
+											<td>
+												Diagnosis and repair of
+												electronic unit 
+											</td>
+											<td>
+												From
+												<span
+													style="
+														color: rgba(
+															33,
+															155,
+															224,
+															1
+														);
+													"
+													>$100</span
+												>
+											</td>
+										</tr>
+										<tr
+											class="get__price-popup"
+											onclick="ym(96823870, 'reachGoal', 'button_15'); return true;"
+										>
+											<td class="table__td">
+												<img
+													src="assets/img/price-6.f38d540a.svg"
+													alt="crossed out drop"
+												>
+											</td>
+											<td>
+												Not <br >
+												Draining
+											</td>
+											<td>
+												Check and clear blockages,
+												repair/replace drain pump
+											</td>
+											<td class="table__right-td">
+												From
+												<span
+													style="
+														color: rgba(
+															33,
+															155,
+															224,
+															1
+														);
+													"
+													>$100</span
+												>
+											</td>
+										</tr>
+										<tr
+											class="get__price-popup"
+											onclick="ym(96823870, 'reachGoal', 'button_16'); return true;"
+										>
+											<td>
+												<img
+													src="assets/img/price-7.7c8d1f43.svg"
+													alt="lock"
+												>
+											</td>
+											<td>
+												Door Won't <br >
+												Lock/Unlock
+											</td>
+											<td>
+												Lock mechanism diagnosis and
+												repair
+											</td>
+											<td>
+												From
+												<span
+													style="
+														color: rgba(
+															33,
+															155,
+															224,
+															1
+														);
+													"
+													>$100</span
+												>
+											</td>
+										</tr>
+										<tr
+											class="get__price-popup"
+											onclick="ym(96823870, 'reachGoal', 'button_17'); return true;"
+										>
+											<td class="table__td">
+												<img
+													src="assets/img/price-8.45533810.svg"
+													alt="thermometer"
+												>
+											</td>
+											<td>Overheating </td>
+											<td>
+												Thermostat and heating element
+												diagnosis and replacement
+											</td>
+											<td class="table__right-td">
+												From
+												<span
+													style="
+														color: rgba(
+															33,
+															155,
+															224,
+															1
+														);
+													"
+													>$100</span
+												>
+											</td>
+										</tr>
+										<tr
+											class="get__price-popup"
+											onclick="ym(96823870, 'reachGoal', 'button_18'); return true;"
+										>
+											<td>
+												<img
+													src="assets/img/price-9.41812850.svg"
+													alt="nose"
+												>
+											</td>
+											<td>
+												Smell <br >
+												or Smoke
+											</td>
+											<td>
+												Electrical and mechanical
+												component check 
+											</td>
+											<td>
+												From
+												<span
+													style="
+														color: rgba(
+															33,
+															155,
+															224,
+															1
+														);
+													"
+													>$100</span
+												>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="price__exclam">
+							<div class="price__exclam-intro">
+								<img
+									src="assets/img/warning.2b11b733.svg"
+									alt="exclam"
+								>
+								<p>
+									Prices are approximate and may vary
+									depending on the specific model and
+									complexity of the work. <br>
 
-                            <!-- item-6 -->
-                            <li class="header__list-item">
-                                <a href="gallery.html">Галерея</a>
-                            </li>
+									<span style="color: #219be0; margin: 30px 0 0 0; display: block;"
+										>The final cost of repair is determined
+										after a free on-site diagnostic. We
+										guarantee no hidden fees.</span
+									>
+								</p>
+							</div>
+							<div class="price__exclam-btn">
+								<button
+									class="get__master btn__blue"
+									onclick="ym(96823870, 'reachGoal', 'button_20'); return true;"
+								>
+									Contact us for more details
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-                        </lu>
-                        
-                    </nav>
+			<section class="price__mob">
+				<div class="container">
+					<div class="price__mob-intro">
+						<h2 class="base__title">
+							Clear Repair Pricing:<span
+								style="color: rgba(33, 155, 224, 1)"
+							>
+								Find the Solution to Your Problem</span
+							>
+						</h2>
+						<p class="base__subtitle">
+							We strive for complete transparency in our pricing.
+							Below, you will find a detailed list of issues with
+							your washing machine and the corresponding service
+							prices. All prices include the cost of parts and
+							labor.
+						</p>
+					</div>
+					<div class="price__mob-wrapper">
+						<div
+							class="price__mob-item get__popup"
+							onclick="ym(96823870, 'reachGoal', 'button_10'); return true;"
+						>
+							<div class="price__mob-item-txt">
+								<h2>Won't Turn On</h2>
+								<p>Power check, motor, etc.</p>
+								<h3>
+									From
+									<span style="color: rgba(33, 155, 224, 1)"
+										>$100</span
+									>
+								</h3>
+							</div>
+						</div>
+						<div
+							class="price__mob-item get__popup"
+							onclick="ym(96823870, 'reachGoal', 'button_11'); return true;"
+						>
+							<div class="price__mob-item-txt">
+								<h2>Leaking </h2>
+								<p>Seal replacement, pump repair, etc. </p>
+								<h3>
+									From
+									<span style="color: rgba(33, 155, 224, 1)"
+										>$100</span
+									>
+								</h3>
+							</div>
+						</div>
+						<div
+							class="price__mob-item get__popup"
+							onclick="ym(96823870, 'reachGoal', 'button_12'); return true;"
+						>
+							<div class="price__mob-item-txt">
+								<h2>Won't Spin</h2>
+								<p>
+									Drive repair/replacement, electronics
+									repair, etc.
+								</p>
+								<h3>
+									From
+									<span style="color: rgba(33, 155, 224, 1)"
+										>$100</span
+									>
+								</h3>
+							</div>
+						</div>
+						<div
+							class="price__mob-item get__popup"
+							onclick="ym(96823870, 'reachGoal', 'button_13'); return true;"
+						>
+							<div class="price__mob-item-txt">
+								<h2>Vibration or Noise</h2>
+								<p>
+									Drum balancing, bearing replacement, etc. 
+								</p>
+								<h3>
+									From
+									<span style="color: rgba(33, 155, 224, 1)"
+										>$100</span
+									>
+								</h3>
+							</div>
+						</div>
+						<div
+							class="price__mob-item get__popup"
+							onclick="ym(96823870, 'reachGoal', 'button_14'); return true;"
+						>
+							<div class="price__mob-item-txt">
+								<h2>Error on Display</h2>
+								<p>Diagnosis and repair of electronic unit </p>
+								<h3>
+									From
+									<span style="color: rgba(33, 155, 224, 1)"
+										>$100</span
+									>
+								</h3>
+							</div>
+						</div>
+						<div
+							class="price__mob-item get__popup"
+							onclick="ym(96823870, 'reachGoal', 'button_15'); return true;"
+						>
+							<div class="price__mob-item-txt">
+								<h2>Not Draining</h2>
+								<p>
+									Check and clear blockages, repair/replace
+									drain pump
+								</p>
+								<h3>
+									From
+									<span style="color: rgba(33, 155, 224, 1)"
+										>$100</span
+									>
+								</h3>
+							</div>
+						</div>
+						<div
+							class="price__mob-item get__popup"
+							onclick="ym(96823870, 'reachGoal', 'button_16'); return true;"
+						>
+							<div class="price__mob-item-txt">
+								<h2>Door Won't Lock/Unlock</h2>
+								<p>Lock mechanism diagnosis and repair</p>
+								<h3>
+									From
+									<span style="color: rgba(33, 155, 224, 1)"
+										>$100</span
+									>
+								</h3>
+							</div>
+						</div>
+						<div
+							class="price__mob-item get__popup"
+							onclick="ym(96823870, 'reachGoal', 'button_17'); return true;"
+						>
+							<div class="price__mob-item-txt">
+								<h2>Overheating </h2>
+								<p>
+									Thermostat and heating element diagnosis and
+									replacement
+								</p>
+								<h3>
+									From
+									<span style="color: rgba(33, 155, 224, 1)"
+										>$100</span
+									>
+								</h3>
+							</div>
+						</div>
+						<div
+							class="price__mob-item get__popup"
+							onclick="ym(96823870, 'reachGoal', 'button_18'); return true;"
+						>
+							<div class="price__mob-item-txt">
+								<h2>Smell or Smoke</h2>
+								<p>
+									Electrical and mechanical component check 
+								</p>
+								<h3>
+									From
+									<span style="color: rgba(33, 155, 224, 1)"
+										>$100</span
+									>
+								</h3>
+							</div>
+						</div>
+					</div>
+					<div class="price__exclam">
+						<div class="price__exclam-intro">
+							<img
+								src="assets/img/warning.2b11b733.svg"
+								alt="exclam"
+							>
+							<p>
+								Prices are approximate and may vary depending on
+								the specific model and complexity of the work.
+								<br>
+								<span style="color: #219be0; margin: 20px 0 0 0; display: block;"
+									>The final cost of repair is determined
+									after a free on-site diagnostic. We
+									guarantee no hidden fees.</span
+								>
+							</p>
+						</div>
+						<div class="price__exclam-btn">
+							<button
+								onclick="ym(96823870, 'reachGoal', 'button_20'); return true;"
+								class="btn__blue get__popup price__btn"
+							>
+								Contact us for more details
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
 
-                    <button class="header__blind-btn" data-header="blind-btn">
-                        <img src="assets/img/eye.1a850a63.png" alt="eye">
-                        <p>Версия для слабовидящих</p>
-                    </button>
-                    
-                </div>
+			<section class="zone">
+				<div class="container">
+					<div class="zone__content">
+						<div class="zone__intro">
+							<h2 class="title__main fix-title">
+								Where We Work: <br>
+								<span style="color: rgba(33, 155, 224, 1)">
+									Our Service Areas</span>
+							</h2>
+							<div class="strel">
+								<img src="assets/img/strel.cd89e6e9.svg" alt="arrows" >
+							</div>
+							<p class="base__subtitle">
+								Our team is ready to come to you and provide
+								professional washing machine repair services
+								anywhere in the state of Texas. Below you will
+								find a map with the marked service areas.
+							</p>
+						</div>
+						<div class="zone__maps">
+							<div class="zone__item">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d839293.62506898!2d-97.54240932030164!3d32.66733033474224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c19f77b45974b%3A0xb9ec9ba4f647678f!2z0JTQsNC70LvQsNGBLCDQotC10YXQsNGBLCDQodCo0JA!5e0!3m2!1sru!2sru!4v1715695384750!5m2!1sru!2sru"
+									width="600"
+									height="450"
+									style="border: 0"
+									allowfullscreen=""
+									loading="lazy"
+									title="map-1"
+									referrerpolicy="no-referrer-when-downgrade"
+								></iframe>
+							</div>
+							<div class="zone__links">
+								<div class="zone__maps-intro">
+									<h2>List of cities</h2>
+								</div>
+								<div class="zone__nav">
+									<nav>
+										<ul class="zone__nav-links-random">
+											<li><a href="#">Houston</a></li>
+											<li><a href="#">San Antonio</a></li>
+											<li><a href="#">Dallas</a></li>
+											<li><a href="#">Austin</a></li>
+											<li><a href="#">Волоколамск</a></li>
+											<li><a href="#">Воскресенск</a></li>
+											<li><a href="#">Высоковск</a></li>
+											<li><a href="#">Голицыно</a></li>
+											<li><a href="#">Дзержинский</a></li>
+											<li><a href="#">Дмитров</a></li>
+											<li>
+												<a href="#">Долгопрудный</a>
+											</li>
+											<li><a href="#">Домодедово</a></li>
+											<li><a href="#">Дрезна</a></li>
+											<li><a href="#">Дубна</a></li>
+											<li><a href="#">Егорьевск</a></li>
+										</ul>
+									</nav>
+								</div>
+								<div class="zone__form">
+									<div class="zone__form-intro">
+										<h2>
+											The operators are ready<br >
+											to accept your order
+										</h2>
+										<div class="zone__form-tel">
+											<img
+												src="assets/img/ws-icon.46d2b742.svg"
+												alt="whatsapp"
+											>
+											<a href="#">+1 800 624 43 43</a>
+										</div>
+										<div class="zone__request">
+											<form action="#" method="POST">
+												<input
+													type="tel"
+													placeholder="Your phone number"
+													name="user__phone"
+													class="telephone__id zone__request-input-item"
+													id="telephone"
+													required
+													minlength="10"
+												>
+												<input
+													placeholder="Problem Description:"
+													name="user__problem"
+													class="zone__request-input-item"
+												>
+												<button
+													onclick="ym(96823870, 'reachGoal', 'button_24'); return true;"
+													class="btn__blue"
+													type="submit"
+												>
+													To order
+													<img src="assets/img/arrow-right-small.f224622e.svg" alt="arrow right">
+												</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-                <button class="header__burger" data-header="burger" aria-label="Открыть меню">
-                    <span></span>
-                </button>
+			<section class="feedback">
+				<div class="container container-mob">
+					<div class="feedback__content">
+						<div class="feedback__intro">
+							<h2 class="title__main title4">
+								Feedback from<br >
+								<span style="color: rgba(33, 155, 224, 1)"
+									>Our Customers on WhatsApp</span
+								>
+							</h2>
+							<div class="strel">
+								<img src="assets/img/strel.cd89e6e9.svg" alt="arrows" >
+							</div>
+							<p class="base__subtitle">
+								We strive for complete transparency in our
+								pricing. Below, you will find a detailed list of
+								issues with your washing machine and the
+								corresponding service prices. All prices include
+								the cost of parts and labor.
+							</p>
+						</div>
 
-            </div>
-        </div>
-    </header>
+						<div
+							id="feedback-slider"
+							class="stories__slider swiper"
+						>
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="swiper-slide__iphone">
+										<div class="swiper-slide__screen">
+											<div
+												class="swiper-slide__notch"
+											></div>
+											<img
+												src="assets/img/feedback.fdb77630.webp"
+												alt="feedback"
+											>
+										</div>
+									</div>
+								</div>
 
-    <main>
+								<div class="swiper-slide">
+									<div class="swiper-slide__iphone">
+										<div class="swiper-slide__screen">
+											<div
+												class="swiper-slide__notch"
+											></div>
+											<img
+												src="assets/img/feedback.fdb77630.webp"
+												alt="feedback"
+											>
+										</div>
+									</div>
+								</div>
 
-        <section class="hero">
+								<div class="swiper-slide">
+									<div class="swiper-slide__iphone">
+										<div class="swiper-slide__screen">
+											<div
+												class="swiper-slide__notch"
+											></div>
+											<img
+												src="assets/img/feedback.fdb77630.webp"
+												alt="feedback"
+											>
+										</div>
+									</div>
+								</div>
 
-            <div class="hero__circle"></div>
-            <div class="hero__circle2"></div>
-            <div class="hero__circle3"></div>
-            <div class="hero__circle4"></div>
+								<div class="swiper-slide">
+									<div class="swiper-slide__iphone">
+										<div class="swiper-slide__screen">
+											<div
+												class="swiper-slide__notch"
+											></div>
+											<img
+												src="assets/img/feedback.fdb77630.webp"
+												alt="feedback"
+											>
+										</div>
+									</div>
+								</div>
 
-            <div class="hero__decor"><img src="assets/img/decor-1.dbdfc47b.svg" alt=""></div>
-            <div class="hero__decor2"><img src="assets/img/decor-2.3eabb857.svg" alt=""></div>
-            <div class="hero__decor3"><img src="assets/img/decor-1.dbdfc47b.svg" alt=""></div>
-            <div class="hero__decor4"><img src="assets/img/decor-2.3eabb857.svg" alt=""></div>
+								<div class="swiper-slide">
+									<div class="swiper-slide__iphone">
+										<div class="swiper-slide__screen">
+											<div
+												class="swiper-slide__notch"
+											></div>
+											<img
+												src="assets/img/feedback.fdb77630.webp"
+												alt="feedback"
+											>
+										</div>
+									</div>
+								</div>
 
-            <!-- <div class="hero__wave1"><img src="assets/img/wave2.9985260b.svg" alt=""></div> -->
-            <!-- <div class="hero__wave2"><img src="assets/img/wave2.9985260b.svg" alt=""></div> -->
+								<div class="swiper-slide">
+									<div class="swiper-slide__iphone">
+										<div class="swiper-slide__screen">
+											<div
+												class="swiper-slide__notch"
+											></div>
+											<img
+												src="assets/img/feedback.fdb77630.webp"
+												alt="feedback"
+											>
+										</div>
+									</div>
+								</div>
+							</div>
 
-            <div class="container">
+							<div class="swiper-button-prev">
+								<img
+									src="assets/img/arrow.86f3e2a0.svg"
+									alt="swipe arrow"
+								>
+							</div>
 
-                <h1 class="hero__title">Добрый день!</h1>
+							<div class="swiper-button-next">
+								<img
+									src="assets/img/arrow.86f3e2a0.svg"
+									alt="swipe arrow"
+								>
+							</div>
 
-                <p class="hero__subtitle">Мы рады Вас приветствовать на сайте муниципального бюджетного дошкольного образовательного учреждения детского сада комбинированного вида второй категории №56 «Улыбка»!!!</p>
+							<div class="RobSan">
+								<p class="Rob">Robert Smith</p>
+								<p style="color: rgba(33, 155, 224, 1)">
+									San Antonio
+								</p>
+							</div>
 
-                <div id="hero-slider" class="hero__slider swiper">
-    
-                    <div class="swiper-wrapper">
-    
-                        <div class="swiper-slide">
-                            <img src="assets/img/hero-1.c8ae2cc9.jpg" alt="">
-                        </div>
-    
-                        <div class="swiper-slide">
-                            <img src="assets/img/hero-2.7905a9e2.jpg" alt="">
-                        </div>
+							<div class="swiper-pagination"></div>
+						</div>
 
-                        <div class="swiper-slide">
-                            <img src="assets/img/hero-3.022f6954.jpg" alt="">
-                        </div>
+						<div class="feedback__links">
+							<div class="feedback__link-item">
+								<div class="but_rad" onclick="modalbox()">
+									<button style="text-wrap: balance">
+										Leave a review on WhatsApp
+									</button>
+								</div>
+							</div>
+							<div class="feedback__qr">
+								<img src="assets/img/qr.c8a4ea88.webp" alt="qr" >
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-                        <div class="swiper-slide">
-                            <img src="assets/img/hero-4.2b819462.jpg" alt="">
-                        </div>
+			<section class="reviews">
+				<div class="container">
+					<div class="reviews__content">
+						<div class="reviews__intro">
+							<h2 class="title__main title8">
+								Video reviews<br >
+								<span style="color: rgba(33, 155, 224, 1)"
+									>of our satisfied customers</span
+								>
+							</h2>
+							<div class="strel">
+								<img src="assets/img/strel.cd89e6e9.svg" alt="arrows" >
+							</div>
+						</div>
 
-                        <div class="swiper-slide">
-                            <img src="assets/img/hero-5.632af273.jpg" alt="">
-                        </div>
+						<p style="color: #fff; text-align: center; margin: 40px 0 0 0; font-size: 30px;">Т.К дизайнер не оставил "эскизов", фото которые были (200 на 100) растягиваются на 1160px => качество оставляет желать лучшего</p>
 
-                        <div class="swiper-slide">
-                            <img src="assets/img/hero-6.22a07fe5.jpg" alt="">
-                        </div>
+						<div class="swiper mySwiper2">
+							<div class="swiper-wrapper">
 
-                        <div class="swiper-slide">
-                            <img src="assets/img/hero-7.bef1401a.jpg" alt="">
-                        </div>
+								<!-- 1 -->
+								<div class="swiper-slide">
+									<img src="assets/img/slide-1.751d066c.webp" alt="slide-1"/>
+								</div>
 
-                        <div class="swiper-slide">
-                            <img src="assets/img/hero-8.569e9b9c.jpg" alt="">
-                        </div>
-    
-                    </div>
-    
-                    <div class="swiper-button-prev"></div>
-    
-                    <div class="swiper-button-next"></div>
-                    
-                    <div class="swiper-pagination"></div>
-    
-                </div>
+								<!-- 2 -->
+								<div class="swiper-slide">
+									<img src="assets/img/slide-2.a6c9313c.webp" alt="slide-2"/>
+								</div>
 
-                <div class="hero__wave_1">
-                    <img src="assets/img/wave.895e121b.svg" alt="">
-                </div>
-                <div class="hero__wrapper">
+								<!-- 3 -->
+								<div class="swiper-slide">
+									<img src="assets/img/slide-3.6d710816.webp" alt="slide-3"/>
+								</div>
 
-                    <!-- box-1 -->
-                    <div class="hero__box">
-                        <img class="hero__box-img" src="assets/img/hero-1.33bb949a.svg" alt="pen">
-                        <p class="hero__box-description">Люди творческие, без которых невозможен успех процесса воспитания, обучения и развития ребёнка</p>
-                    </div>
+								<!-- 4 -->
+								<div class="swiper-slide">
+									<img src="assets/img/slide-1.751d066c.webp" alt="slide-4"/>
+								</div>
 
-                    <!-- box-2 -->
-                    <div class="hero__box">
-                        <img class="hero__box-img" src="assets/img/hero-2.b8e1691c.svg" alt="woman">
-                        <p class="hero__box-description">Профессионалы, которые выбирают свой метод работы, исходя из собственной индивидуальности, понимая своё предназначение</p>
-                    </div>
+								<!-- 5 -->
+								<div class="swiper-slide">
+									<img src="assets/img/slide-2.a6c9313c.webp" alt="slide-5"/>
+								</div>
 
-                    <!-- box-3 -->
-                    <div class="hero__box">
-                        <img class="hero__box-img" src="assets/img/hero-3.c4b08bd2.svg" alt="star">
-                        <p class="hero__box-description">Педагоги, способные встать на более высокий уровень духовности и образованности на пути к профессиональному совершенству</p>
-                    </div>
+								<!-- 6 -->
+								<div class="swiper-slide">
+									<img src="assets/img/slide-3.6d710816.webp" alt="slide-6"/>
+								</div>
 
-                    <!-- box-4 -->
-                    <div class="hero__box">
-                        <img class="hero__box-img" src="assets/img/hero-4.3e7b722f.svg" alt="heart">
-                        <p class="hero__box-description">Женщины, несущие тепло своих сердец детям, их мамам и папам, бабушкам и дедушкам</p>
-                    </div>
+								<!-- 7 -->
+								<div class="swiper-slide">
+									<img src="assets/img/slide-1.751d066c.webp" alt="slide-7"/>
+								</div>
 
-                    <!-- box-5 -->
-                    <div class="hero__box">
-                        <img class="hero__box-img" src="assets/img/hero-5.f62a754d.svg" alt="colleagues">
-                        <p class="hero__box-description">Коллеги, создающие дружелюбную, творческую атмосферу в стенах нашего замечательного дома</p>
-                    </div>
+								<!-- 8 -->
+								<div class="swiper-slide">
+									<img src="assets/img/slide-2.a6c9313c.webp" alt="slide-8"/>
+								</div>
+								
+								<!-- 9 -->
+								<div class="swiper-slide">
+									<img src="assets/img/slide-3.6d710816.webp" alt="slide-9"/>
+								</div>
 
-                </div>
-                <div class="hero__wave_2">
-                    <img src="assets/img/wave.895e121b.svg" alt="">
-                </div>
+							</div>
+						</div>
 
-                <div class="hero__trash" style="margin: 50px 0 0 0;">
-                    <div id="jsn-content-top" class="">
-                    <div id="jsn-promo" class="row-fluid"></div>
-                    <div id="jsn-pos-content-top" class="jsn-modulescontainer jsn-horizontallayout jsn-modulescontainer1 row-fluid">
-                    <div class="pos jsn-modulecontainer span12"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent"><div>
-                    <script src="https://pos.gosuslugi.ru/bin/script.min.js"></script> <style> #js-show-iframe-wrapper{position:relative;display:flex;align-items:center;justify-content:center;width:100%;min-width:293px;max-width:100%;background:linear-gradient(138.4deg,#38bafe 26.49%,#2d73bc 79.45%);color:#fff;cursor:pointer}#js-show-iframe-wrapper .pos-banner-fluid *{box-sizing:border-box}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2{display:block;width:240px;min-height:56px;font-size:18px;line-height:24px;cursor:pointer;background:#0d4cd3;color:#fff;border:none;border-radius:8px;outline:0}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2:hover{background:#1d5deb}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2:focus{background:#2a63ad}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2:active{background:#2a63ad}@-webkit-keyframes fadeInFromNone{0%{display:none;opacity:0}1%{display:block;opacity:0}100%{display:block;opacity:1}}@keyframes fadeInFromNone{0%{display:none;opacity:0}1%{display:block;opacity:0}100%{display:block;opacity:1}}@font-face{font-family:LatoWebLight;src:url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Light.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Light.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Light.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:LatoWeb;src:url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Regular.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Regular.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Regular.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:LatoWebBold;src:url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Bold.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Bold.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Bold.ttf) format("truetype");font-style:normal;font-weight:400} </style> <style> #js-show-iframe-wrapper .bf-2{position:relative;display:grid;grid-template-columns:var(--pos-banner-fluid-2__grid-template-columns);grid-template-rows:var(--pos-banner-fluid-2__grid-template-rows);width:100%;max-width:1060px;font-family:LatoWeb,sans-serif;box-sizing:border-box}#js-show-iframe-wrapper .bf-2__decor{grid-column:var(--pos-banner-fluid-2__decor-grid-column);grid-row:var(--pos-banner-fluid-2__decor-grid-row);padding:var(--pos-banner-fluid-2__decor-padding);background:var(--pos-banner-fluid-2__bg-url) var(--pos-banner-fluid-2__bg-position) no-repeat;background-size:var(--pos-banner-fluid-2__bg-size)}#js-show-iframe-wrapper .bf-2__logo-wrap{position:absolute;top:var(--pos-banner-fluid-2__logo-wrap-top);bottom:var(--pos-banner-fluid-2__logo-wrap-bottom);right:0;display:flex;flex-direction:column;align-items:flex-end;padding:var(--pos-banner-fluid-2__logo-wrap-padding);background:#2d73bc;border-radius:var(--pos-banner-fluid-2__logo-wrap-border-radius)}#js-show-iframe-wrapper .bf-2__logo{width:128px}#js-show-iframe-wrapper .bf-2__slogan{font-family:LatoWebBold,sans-serif;font-size:var(--pos-banner-fluid-2__slogan-font-size);line-height:var(--pos-banner-fluid-2__slogan-line-height);color:#fff}#js-show-iframe-wrapper .bf-2__content{padding:var(--pos-banner-fluid-2__content-padding)}#js-show-iframe-wrapper .bf-2__description{display:flex;flex-direction:column;margin-bottom:24px}#js-show-iframe-wrapper .bf-2__text{margin-bottom:12px;font-size:24px;line-height:32px;font-family:LatoWebBold,sans-serif;color:#fff}#js-show-iframe-wrapper .bf-2__text_small{margin-bottom:0;font-size:16px;line-height:24px;font-family:LatoWeb,sans-serif}#js-show-iframe-wrapper .bf-2__btn-wrap{display:flex;align-items:center;justify-content:center} </style> <div id="js-show-iframe-wrapper"> <div class="pos-banner-fluid bf-2"> <div class="bf-2__decor"> <div class="bf-2__logo-wrap"> <img class="bf-2__logo" src="https://pos.gosuslugi.ru/bin/banner-fluid/gosuslugi-logo.svg" alt="Госуслуги"> <div class="bf-2__slogan">Решаем вместе</div> </div> </div> <div class="bf-2__content"> <div class="bf-2__description"> <span class="bf-2__text"> Не убран мусор, яма на дороге, не горит фонарь? </span> <span class="bf-2__text bf-2__text_small"> Столкнулись с проблемой&nbsp;— сообщите о ней! </span> </div> <div class="bf-2__btn-wrap"> <!-- pos-banner-btn_2 не удалять; другие классы не добавлять --> <button class="pos-banner-btn_2" type="button" style="width: 240px;">Сообщить о проблеме</button> </div> </div> </div> </div> <script> (function(){ "use strict";function ownKeys(e,t){var o=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);if(t)n=n.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable});o.push.apply(o,n)}return o}function _objectSpread(e){for(var t=1;t<arguments.length;t++){var o=null!=arguments[t]?arguments[t]:{};if(t%2)ownKeys(Object(o),true).forEach(function(t){_defineProperty(e,t,o[t])});else if(Object.getOwnPropertyDescriptors)Object.defineProperties(e,Object.getOwnPropertyDescriptors(o));else ownKeys(Object(o)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(o,t))})}return e}function _defineProperty(e,t,o){if(t in e)Object.defineProperty(e,t,{value:o,enumerable:true,configurable:true,writable:true});else e[t]=o;return e}var POS_PREFIX_2="--pos-banner-fluid-2__",posOptionsInitial={"grid-template-columns":"100%","grid-template-rows":"310px auto","decor-grid-column":"initial","decor-grid-row":"initial","decor-padding":"30px 30px 0 30px","bg-url":"url('https://pos.gosuslugi.ru/bin/banner-fluid/2/banner-fluid-bg-2-small.svg')","bg-position":"calc(10% + 64px) calc(100% - 20px)","bg-size":"cover","content-padding":"0 30px 30px 30px","slogan-font-size":"20px","slogan-line-height":"32px","logo-wrap-padding":"20px 30px 30px 40px","logo-wrap-top":"0","logo-wrap-bottom":"initial","logo-wrap-border-radius":"0 0 0 80px"},setStyles=function(e,t){Object.keys(e).forEach(function(o){t.style.setProperty(POS_PREFIX_2+o,e[o])})},removeStyles=function(e,t){Object.keys(e).forEach(function(e){t.style.removeProperty(POS_PREFIX_2+e)})};function changePosBannerOnResize(){var e=document.documentElement,t=_objectSpread({},posOptionsInitial),o=document.getElementById("js-show-iframe-wrapper"),n=o?o.offsetWidth:document.body.offsetWidth;if(n>405)t["slogan-font-size"]="24px",t["logo-wrap-padding"]="30px 50px 30px 70px";if(n>500)t["grid-template-columns"]="min-content 1fr",t["grid-template-rows"]="100%",t["decor-grid-column"]="2",t["decor-grid-row"]="1",t["decor-padding"]="30px 30px 30px 0",t["content-padding"]="30px",t["bg-position"]="0% calc(100% - 70px)",t["logo-wrap-padding"]="30px 30px 24px 40px",t["logo-wrap-top"]="initial",t["logo-wrap-bottom"]="0",t["logo-wrap-border-radius"]="80px 0 0 0";if(n>585)t["bg-position"]="0% calc(100% - 6px)";if(n>800)t["bg-url"]="url('https://pos.gosuslugi.ru/bin/banner-fluid/2/banner-fluid-bg-2.svg')",t["bg-position"]="0% center";if(n>1020)t["slogan-font-size"]="32px",t["line-height"]="40px",t["logo-wrap-padding"]="30px 30px 24px 50px";setStyles(t,e)}changePosBannerOnResize(),window.addEventListener("resize",changePosBannerOnResize),window.onunload=function(){var e=document.documentElement;window.removeEventListener("resize",changePosBannerOnResize),removeStyles(posOptionsInitial,e)}; })() </script> <script>Widget("https://pos.gosuslugi.ru/form", 237323)</script></div><div class="clearbreak"></div></div></div></div></div>	
-                    </div>
-                </div>
+						<div class="box-wrap">
+							<div class="swiper-button-prev">
+								<img class="one-img" src="assets/img/arrow-slider2.b1529546.svg" alt="arrow slider">
+								<img class="tow-img" src="assets/img/arrow.86f3e2a0.svg" alt="arrow slider">
+								<!-- <picture>
+									<source srcset="assets/img/arrow.86f3e2a0.svg" media="(max-width: 600px)">
+									<img src="assets/img/arrow-slider2.b1529546.svg" alt="Описание изображения">
+								</picture> -->
+							</div>
 
-                <p class="hero__botton">Сотрудничество с нами позволит Вам, уважаемые родители и гости нашего сайта, получить возможность быть в курсе событий нашего детского сада и участвовать в жизни Ваших детей, даже когда Вас нет рядом; быть спокойными за то, что Ваши дети получают все необходимое в образовательном учреждении.</p>
+							<div thumbsSlider="" class="swiper mySwiper">
+								<div class="swiper-wrapper">
+	
+									<!-- 1 -->
+									<div class="swiper-slide">
+										<img src="assets/img/slide-1.751d066c.webp" alt="slide-1"/>
+									</div>
 
-            </div>
-        </section>
+									<!-- 2 -->
+									<div class="swiper-slide">
+										<img src="assets/img/slide-2.a6c9313c.webp" alt="slide-2"/>
+									</div>
 
-    </main>
+									<!-- 3 -->
+									<div class="swiper-slide">
+										<img src="assets/img/slide-3.6d710816.webp" alt="slide-3"/>
+									</div>
 
-    <footer class="footer">
-        <div class="container">
-            <p class="footer__privacy-policy"><a href="https://bkobr.ru/privacy-policy/">Политика конфиденциальности</a></p>
-            <p class="footer__сopyright">© 2013 — 2024 МБДОУ ДС №56 «УЛЫБКА»</p>
-            <p class="footer__creator">Реализовал сайт <a href="https://kwork.ru/user/traniks">Traniks</a></p>
-        </div>
-    </footer>
+									<!-- 4 -->
+									<div class="swiper-slide">
+										<img src="assets/img/slide-1.751d066c.webp" alt="slide-4"/>
+									</div>
 
-    
-    <script src="assets/js/blocks.js"></script>
-    <script src="assets/js/index.js"></script>
-</body>
+									<!-- 5 -->
+									<div class="swiper-slide">
+										<img src="assets/img/slide-2.a6c9313c.webp" alt="slide-5"/>
+									</div>
+
+									<!-- 6 -->
+									<div class="swiper-slide">
+										<img src="assets/img/slide-3.6d710816.webp" alt="slide-6"/>
+									</div>
+
+									<!-- 7 -->
+									<div class="swiper-slide">
+										<img src="assets/img/slide-1.751d066c.webp" alt="slide-7"/>
+									</div>
+
+									<!-- 8 -->
+									<div class="swiper-slide">
+										<img src="assets/img/slide-2.a6c9313c.webp" alt="slide-8"/>
+									</div>
+									
+									<!-- 9 -->
+									<div class="swiper-slide">
+										<img src="assets/img/slide-3.6d710816.webp" alt="slide-9"/>
+									</div>
+	
+								</div>
+							</div>
+
+							<div class="swiper-button-next">
+								<img class="one-img" src="assets/img/arrow-slider2.b1529546.svg" alt="arrow slider">
+								<img class="tow-img" src="assets/img/arrow.86f3e2a0.svg" alt="arrow slider">
+								<!-- <picture>
+									<source srcset="assets/img/arrow.86f3e2a0.svg" media="(max-width: 600px)">
+									<img src="assets/img/arrow-slider2.b1529546.svg" alt="Описание изображения">
+								</picture> -->
+							</div>
+						</div>
+
+
+						<div class="feedback__links">
+							<div class="feedback__link-item">
+								<div class="but_rad" onclick="modalbox()">
+									<button style="text-wrap: balance">
+										Share your experience
+									</button>
+								</div>
+							</div>
+							<div class="feedback__qr">
+								<img src="assets/img/qr.c8a4ea88.webp" alt="qr" >
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="question">
+				<div class="container">
+					<div class="question__content">
+						<div class="question__intro">
+							<h2 class="title__main title6">
+								Your Questions<br >
+								<span style="color: rgba(33, 155, 224, 1)"
+									>Our Answers</span
+								>
+							</h2>
+							<div class="strel">
+								<img src="assets/img/strel.cd89e6e9.svg" alt="arrows" >
+							</div>
+							<p class="base__subtitle">
+								Have questions? Here you can find answers to the
+								most common ones. If you have additional
+								questions, we're always ready to help - contact
+								us!
+							</p>
+						</div>
+						<div class="question__wrapper">
+							<div class="question__accordeon first__acordeon">
+								<div class="question__acc-head">
+									<h3>
+										How quickly can you come for a
+										diagnostic?
+									</h3>
+									<div class="arrow__box">
+										<img
+											class="arrow"
+											src="assets/img/arrow-down.5e657204.svg"
+											alt="arrow down"
+										>
+									</div>
+								</div>
+								<div class="question__acc-body">
+									<p>
+										- Our specialist can be at your home
+										within 24 hours after placing a request.
+									</p>
+								</div>
+								<!-- <hr> -->
+							</div>
+
+							<div class="question__accordeon">
+								<div class="question__acc-head">
+									<h3>
+										Does the cost of parts include the total
+										repair cost?
+									</h3>
+									<div class="arrow__box">
+										<img
+											class="arrow"
+											src="assets/img/arrow-down.5e657204.svg"
+											alt="arrow down"
+										>
+									</div>
+								</div>
+								<div class="question__acc-body">
+									<p>
+										- Our specialist can be at your home
+										within 24 hours after placing a request.
+									</p>
+								</div>
+								<hr >
+							</div>
+
+							<div class="question__accordeon">
+								<div class="question__acc-head">
+									<h3>
+										What should I do if the issue recurs
+										after the repair?
+									</h3>
+									<div class="arrow__box">
+										<img
+											class="arrow"
+											src="assets/img/arrow-down.5e657204.svg"
+											alt="arrow down"
+										>
+									</div>
+								</div>
+								<div class="question__acc-body">
+									<p>
+										- Our specialist can be at your home
+										within 24 hours after placing a request.
+									</p>
+								</div>
+								<hr >
+							</div>
+
+							<div class="question__accordeon">
+								<div class="question__acc-head">
+									<h3>
+										Can I get a discount on my first order?
+									</h3>
+									<div class="arrow__box">
+										<img
+											class="arrow"
+											src="assets/img/arrow-down.5e657204.svg"
+											alt="arrow down"
+										>
+									</div>
+								</div>
+								<div class="question__acc-body">
+									<p>
+										- Our specialist can be at your home
+										within 24 hours after placing a request.
+									</p>
+								</div>
+								<hr >
+							</div>
+
+							<div class="question__accordeon">
+								<div class="question__acc-head">
+									<h3>
+										What is included in the free diagnostic?
+									</h3>
+									<div class="arrow__box">
+										<img
+											class="arrow"
+											src="assets/img/arrow-down.5e657204.svg"
+											alt="arrow down"
+										>
+									</div>
+								</div>
+								<div class="question__acc-body">
+									<p>
+										- Our specialist can be at your home
+										within 24 hours after placing a request.
+									</p>
+								</div>
+								<hr >
+							</div>
+
+							<div class="question__accordeon">
+								<div class="question__acc-head">
+									<h3>How long does the repair take?</h3>
+									<div class="arrow__box">
+										<img
+											class="arrow"
+											src="assets/img/arrow-down.5e657204.svg"
+											alt="arrow down"
+										>
+									</div>
+								</div>
+								<div class="question__acc-body">
+									<p>
+										- Our specialist can be at your home
+										within 24 hours after placing a request.
+									</p>
+								</div>
+								<hr >
+							</div>
+
+							<div class="question__accordeon">
+								<div class="question__acc-head">
+									<h3>
+										Can you repair washing machines at home,
+										or do I need to transport it somewhere?
+									</h3>
+									<div class="arrow__box">
+										<img
+											class="arrow"
+											src="assets/img/arrow-down.5e657204.svg"
+											alt="arrow down"
+										>
+									</div>
+								</div>
+								<div class="question__acc-body">
+									<p>
+										- Our specialist can be at your home
+										within 24 hours after placing a request.
+									</p>
+								</div>
+								<hr >
+							</div>
+
+							<div class="question__accordeon">
+								<div class="question__acc-head">
+									<h3>
+										Do you accept credit cards for payment?
+									</h3>
+									<div class="arrow__box">
+										<img
+											class="arrow"
+											src="assets/img/arrow-down.5e657204.svg"
+											alt="arrow down"
+										>
+									</div>
+								</div>
+								<div class="question__acc-body">
+									<p>
+										- Our specialist can be at your home
+										within 24 hours after placing a request.
+									</p>
+								</div>
+								<hr >
+							</div>
+
+							<div class="question__accordeon end__accordeon">
+								<div class="question__acc-head">
+									<h3>
+										What should I do if I am not at home
+										during the scheduled technician visit?
+									</h3>
+									<div class="arrow__box">
+										<img
+											class="arrow"
+											src="assets/img/arrow-down.5e657204.svg"
+											alt="arrow down"
+										>
+									</div>
+								</div>
+								<div class="question__acc-body">
+									<p>
+										- Our specialist can be at your home
+										within 24 hours after placing a request.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="feedback__links">
+							<p>
+								Didn't find the answer <br >
+								to your question? Contact us!
+							</p>
+							<div class="feedback__link-item">
+								<div class="but_rad btn2" onclick="modalbox()">
+									<button>Schedule a Free Diagnostic</button>
+								</div>
+							</div>
+							<div class="feedback__qr">
+								<img src="assets/img/qr.c8a4ea88.webp" alt="qr" >
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="protect">
+					<div class="container">
+						<div class="protect__intro">
+							<h2 class="title__main title7">
+								Repair Warranty: Your<br >
+								<span style="color: rgba(33, 155, 224, 1)"
+									>Protection Against Accident</span
+								>
+							</h2>
+							<div class="strel">
+								<img src="assets/img/strel.cd89e6e9.svg" alt="arrows" >
+							</div>
+							<p class="base__subtitle">
+								We stand behind the quality of our work. <br >
+								A one-year warranty on all services and parts.
+							</p>
+						</div>
+						<div class="protect__body">
+							<div class="protect__card">
+								<p class="titl">Duration:</p>
+								<p class="txt">
+									1 year from the completion<br >of the
+									repair.
+								</p>
+								<div class="protect__img">
+									<img
+										src="assets/img/protect-1.3cb4257a.svg"
+										alt="calendar"
+									>
+								</div>
+							</div>
+
+							<div class="protect__card">
+								<p class="titl">Coverage:</p>
+								<p class="txt">
+									All completed work and<br >installed parts.
+								</p>
+								<div class="protect__img">
+									<img
+										src="assets/img/protect-2.3e608e82.svg"
+										alt="shield"
+									>
+								</div>
+							</div>
+
+							<div class="protect__card">
+								<p class="titl">Exclusions:</p>
+								<p class="txt">
+									Damage due to improper use ofthe device,
+									natural disasters,and consumable items<br >(e.g.,
+									filters).
+								</p>
+								<div class="protect__img">
+									<img
+										src="assets/img/protect-3.7472e02d.svg"
+										alt="warning"
+									>
+								</div>
+							</div>
+						</div>
+						<p class="sub__titel">
+							In the event <br >
+							of a warranty claim:
+						</p>
+						<div class="protect__body">
+							<div class="protect__card">
+								<p class="titl">Contact:</p>
+								<p class="txt">
+									Call
+									<a
+										href="#"
+										style="
+											text-decoration: none;
+											color: rgba(33, 155, 224, 1);
+										"
+										>+1 800 624 43 43</a
+									>
+									<br >
+									or write to us on the website.
+								</p>
+								<div class="protect__img">
+									<img
+										src="assets/img/protect-4.7472e02d.svg"
+										alt="phone"
+									>
+								</div>
+							</div>
+
+							<div class="protect__card">
+								<p class="titl">Verification:</p>
+								<p class="txt">
+									Describe the problem, we confirm the
+									warranty case.
+								</p>
+								<div class="protect__img">
+									<img
+										src="assets/img/protect-5.f694e86d.svg"
+										alt="list"
+									>
+								</div>
+							</div>
+
+							<div class="protect__card">
+								<p class="titl">Duration:</p>
+								<p class="txt">
+									We organize free repair or <br >
+									replacement of parts.
+								</p>
+								<div class="protect__img">
+									<img
+										src="assets/img/protect-6.eff779b6.svg"
+										alt="wrench"
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="technicians">
+					<div class="container">
+						<div class="technicians__head">
+							<h2 class="title__main">
+								Meet Our<br >
+								<span style="color: rgba(33, 155, 224, 1)"
+									>Technicians</span
+								>
+							</h2>
+							<div class="strel">
+								<img src="assets/img/strel.cd89e6e9.svg" alt="arrows" >
+							</div>
+							<p class="base__subtitle">
+								Our team consists of highly qualified
+								professionals with deep knowledge and practical
+								experience in washing machine repair. We are
+								proud of each of our technicians and are ready
+								to introduce them to you.
+							</p>
+						</div>
+
+						<div class="technicians__body">
+							<div class="tech__cards">
+								<img
+									src="assets/img/technicians.c2e76700.webp"
+									alt="our client"
+								>
+								<div class="tech-body">
+									<p class="title">Robert Smith</p>
+									<p class="txt">
+										- Specialization: Electronics and
+										electromechanics. <br >
+										<br >
+										- Years of experience: Over 10 years.
+										<br >
+										<br >
+										- About me: I am passionate about repair
+										work and always strive for perfection in
+										every detail. In my free time, I study
+										the latest technologies in home
+										appliances.
+									</p>
+								</div>
+							</div>
+
+							<div class="tech__cards">
+								<img
+									src="assets/img/technicians.c2e76700.webp"
+									alt="our client"
+								>
+								<div class="tech-body">
+									<p class="title">Loki Rivers</p>
+									<p class="txt">
+										- Specialization: Hydraulics and pump
+										systems. <br ><br >
+										- Years of experience: 8 years.
+										<br ><br >
+										- About me: I love helping people bring
+										their appliances back to life. There's
+										nothing better than seeing the smiles of
+										gratitude on our clients' faces.
+									</p>
+								</div>
+							</div>
+
+							<div class="tech__cards">
+								<img
+									src="assets/img/technicians.c2e76700.webp"
+									alt="our client"
+								>
+								<div class="tech-body">
+									<p class="title">Michael Green</p>
+									<p class="txt">
+										- Specialization: Mechanical issues and
+										bearing replacement. <br ><br >
+										- Years of experience: 12 years.
+										<br ><br >
+										- About me: Repair work is like solving
+										a complex puzzle to me. I won't stop
+										until I find the best solution.
+									</p>
+								</div>
+							</div>
+
+							<div class="tech__cards">
+								<img
+									src="assets/img/technicians.c2e76700.webp"
+									alt="our client"
+								>
+								<div class="tech-body">
+									<p class="title">Robert Smith</p>
+									<p class="txt">
+										- Specialization: Electronics and
+										electromechanics. <br >
+										<br >
+										- Years of experience: Over 10 years.
+										<br >
+										<br >
+										- About me: I am passionate about repair
+										work and always strive for perfection in
+										every detail. In my free time, I study
+										the latest technologies in home
+										appliances.
+									</p>
+								</div>
+							</div>
+
+							<div class="tech__cards">
+								<img
+									src="assets/img/technicians.c2e76700.webp"
+									alt="our client"
+								>
+								<div class="tech-body">
+									<p class="title">Loki Rivers</p>
+									<p class="txt">
+										- Specialization: Hydraulics and pump
+										systems. <br ><br >
+										- Years of experience: 8 years.
+										<br ><br >
+										- About me: I love helping people bring
+										their appliances back to life. There's
+										nothing better than seeing the smiles of
+										gratitude on our clients' faces.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="technicians__footer">
+							<p>
+								In our team, only the best of the best. We
+								continuously undergo training and certification
+								to ensure we offer you the highest quality
+								services.
+							</p>
+
+							<div class="but_rad">
+								<button onclick="modalbox()">
+									Call a <br >
+									technician
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="find">
+				<div class="container">
+					<div class="find__content">
+						<div class="find__intro">
+							<h2 class="title__main title5">
+								Always Nearby: Find Your<br >
+								<span style="color: rgba(33, 155, 224, 1)">
+									Nearest Technician</span
+								>
+							</h2>
+							<div class="strel">
+								<img src="assets/img/strel.cd89e6e9.svg" alt="our client">
+							</div>
+							<p class="base__subtitle">
+								Our technicians are spread throughout the state
+								of Texas to provide quick and efficient washing
+								machine repair services right at your home.
+								Enter your address below to find out when the
+								nearest technician can come to you.
+							</p>
+						</div>
+
+						<div class="find__map">
+							<div class="find__map-title">
+								<div class="find__map-wrapper">
+									<div class="find__map-head">
+										<form action="#">
+											<input
+												placeholder="Your address"
+												required
+											>
+											<input
+												type="tel"
+												class="find__map-tel-input telephone__id"
+												placeholder="Your phone number"
+												required
+											>
+											<div class="but_rad but_rad_none">
+												<button>
+													Where's the
+													<br >Technician?
+												</button>
+											</div>
+										</form>
+									</div>
+									<div class="find__map-body">
+										<div id="map-container">
+											<iframe
+												src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d839293.62506898!2d-97.54240932030164!3d32.66733033474224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c19f77b45974b%3A0xb9ec9ba4f647678f!2z0JTQsNC70LvQsNGBLCDQotC10YXQsNGBLCDQodCo0JA!5e0!3m2!1sru!2sru!4v1715695384750!5m2!1sru!2sru"
+												width="600"
+												height="450"
+												allowfullscreen=""
+												loading="lazy"
+												title="map-2"
+												referrerpolicy="no-referrer-when-downgrade"
+											></iframe>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__intro">
+					<h2 class="title__main">
+						Contact Us: We're<br >
+						<span style="color: rgba(33, 155, 224, 1)"
+							>Always Here for You!</span
+						>
+					</h2>
+					<div class="strel">
+						<img src="assets/img/strel.cd89e6e9.svg" alt="our client">
+					</div>
+					<p class="base__subtitle">
+						Our team is always ready to answer your questions and
+						assist with your washing machines.<br >Don't hesitate
+						to reach out to us — we're here to help!
+					</p>
+				</div>
+				<div class="contact">
+					<div class="block-left">
+						<div>
+							<img
+								src="assets/img/tel-footer.6972bf20.svg"
+								alt="phone"
+								class="phone"
+							>
+						</div>
+						<p class="title">Phone:</p>
+						<p class="number">+1 800 624 43 43</p>
+						<div style="display: flex; justify-content: center">
+							<a href="#"
+								><img
+									src="assets/img/ws.e4db4c27.svg"
+									alt="whatsapp"
+							></a>
+						</div>
+						<hr >
+						<p class="time">
+							Hours of Operation:
+							<span style="color: #219be0">24/7</span>
+						</p>
+					</div>
+					<div class="block-right">
+						<h2>Order Form:</h2>
+						<form action="#">
+							<div class="input__row1">
+								<input
+									type="text"
+									placeholder="Your phone number"
+								>
+								<input type="text" placeholder="Your address" >
+							</div>
+							<div class="input__row2">
+								<input
+									type="text"
+									placeholder="Problem Description:"
+								>
+								<div class="block__">
+									<button>
+										Call a <br >
+										Technician
+									</button>
+									<div>
+										<input
+											type="checkbox"
+											id="myCheckbox"
+										>
+										<label for="myCheckbox"></label>
+										<p>
+											Consent checkbox for personal data
+											processing: I agree to the
+											processing of my personal data in
+											accordance with the Privacy Policy
+										</p>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="end">
+					<p>© All rights reserved. 1996-2024</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="assets/js/accordion.d2c0563d.js"></script>
+		<script src="assets/js/slider.55f94139.js"></script>
+
+		<script>
+			const modalBox = document.getElementById('modalbox')
+
+			function modalbox() {
+				if (modalBox.style.display === 'none') {
+					modalBox.style.display = 'block'
+				} else {
+					modalBox.style.display = 'none'
+				}
+			}
+		</script>
+	</body>
 </html>
