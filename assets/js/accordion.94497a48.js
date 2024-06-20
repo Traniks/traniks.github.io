@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(()=>{document.querySelectorAll(".question__accordeon").forEach((e=>{e.querySelector(".question__acc-head");const o=e.querySelector(".question__acc-body"),t=e.querySelector(".arrow__box");e.addEventListener("click",(()=>{o.classList.toggle("question__acc-body_active"),t.classList.toggle("arrow__box_active")}))}))}));
