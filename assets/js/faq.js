@@ -1,1 +1,0 @@
-document.addEventListener("DOMContentLoaded",(()=>{document.querySelectorAll(".faq__box").forEach((e=>{const t=e.querySelector(".faq__box-img"),o=e.querySelector(".faq__box-description");e.addEventListener("click",(()=>{t.classList.toggle("faq__box-img_active"),o.classList.toggle("faq__box-description_active")}))}))}));

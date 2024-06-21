@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(()=>{const e=document.querySelectorAll(".head__item");window.addEventListener("mousemove",(function(n){const{clientX:t,clientY:o}=n,{innerWidth:d,innerHeight:i}=window,c=(t-d/2)/d,r=(o-i/2)/i;e.forEach(((e,n)=>{const t=(n+20)/10,o=20*c*t,d=20*r*t;e.style.transform=`translate(${o}px, ${d}px)`}))}))}));

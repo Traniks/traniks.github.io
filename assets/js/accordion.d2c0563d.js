@@ -1,1 +1,0 @@
-document.querySelectorAll(".question__accordeon").forEach((e=>{e.querySelector(".question__acc-head");const c=e.querySelector(".question__acc-body"),o=e.querySelector(".arrow__box");e.addEventListener("click",(()=>{c.classList.toggle("question__acc-body_active"),o.classList.toggle("arrow__box_active")}))}));
