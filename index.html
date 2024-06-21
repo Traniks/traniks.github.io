@@ -38,13 +38,13 @@
 		</style>
 	</head>
 	<body>
-		<!-- Modal-phone -->
+		<!-- Modal-Phone -->
 		<section class="modalbox" id="modal-phone" style="display: none">
 			<div class="modalbox__content">
 				<div class="modalbox__intro">
 					<div class="modalbox__head">
 						<h1>Enter your phone number</h1>
-						<button class="get__popup modalbox__close-item" onclick="modalBox()">
+						<button class="get__popup modalbox__close-item" onclick="toggleModal('modal-phone')">
 							<img src="assets/img/cross.fa34e17b.svg" alt="close" style="width: 20px">
 						</button>
 					</div>
@@ -85,7 +85,7 @@
 				<div class="modalbox__intro">
 					<div class="modalbox__head">
 						<h1 class="modalbox__intro-ws">Use the QR code to join<br> our WhatsApp group</h1>
-						<button class="get__popup modalbox__close-item" onclick="modalBoxWs()">
+						<button class="get__popup modalbox__close-item" onclick="toggleModal('modal-ws')">
 							<img src="assets/img/cross.fa34e17b.svg" alt="close" style="width: 20px">
 						</button>
 					</div>
@@ -104,7 +104,7 @@
 				<div class="modalbox__intro">
 					<div class="modalbox__head">
 						<h1 class="modalbox__intro-ws">Enter your phone<br> number and question</h1>
-						<button class="get__popup modalbox__close-item" onclick="modalBoxQuestion()">
+						<button class="get__popup modalbox__close-item" onclick="toggleModal('modal-question')">
 							<img src="assets/img/cross.fa34e17b.svg" alt="close" style="width: 20px" loading="lazy">
 						</button>
 					</div>
@@ -128,6 +128,47 @@
 								checked
 							>
 							<label for="modalbox__subtitle-question"></label>
+							<p>
+								Consent checkbox for personal data
+								processing: I agree to the processing of my
+								personal data in accordance with the Privacy
+								Policy
+							</p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<!-- Modal-Price -->
+		<section class="modalbox" id="modal-prise" style="display: none">
+			<div class="modalbox__content">
+				<div class="modalbox__intro">
+					<div class="modalbox__head">
+						<h1>Enter your phone number</h1>
+						<button class="get__popup modalbox__close-item" onclick="toggleModal('modal-prise')">
+							<img src="assets/img/cross.fa34e17b.svg" alt="close" style="width: 20px">
+						</button>
+					</div>
+					<form action="#" method="POST">
+						<input
+							placeholder="+1 000 000 00 00"
+							type="tel"
+							class="telephone__id modalbox__input"
+							name="user__phone"
+							required
+						>
+						<button class="modal__send btn__red">
+							to send
+						</button>
+						<div class="modalbox__subtitle">
+							<input
+								type="checkbox"
+								name="modalbox__subtitle"
+								id="modalbox__subtitle"
+								checked
+							>
+							<label for="modalbox__subtitle"></label>
 							<p>
 								Consent checkbox for personal data
 								processing: I agree to the processing of my
@@ -189,7 +230,7 @@
 				</div>
 				<div class="navigation">
 					<div class="but">
-						<button type="button" onclick="modalBox()">
+						<button type="button" onclick="toggleModal('modal-phone')">
 							Call a<br >technician
 						</button>
 					</div>
@@ -379,7 +420,7 @@
 						</div>
 					</div>
 					<div class="but_rad mob_but_rad">
-						<button onclick="modalBoxQuestion()">Schedule a Free Diagnostic</button>
+						<button onclick="toggleModal('modal-phone')">Schedule a Free Diagnostic</button>
 					</div>
 				</div>
 			</section>
@@ -594,7 +635,7 @@
 						</div>
 					</div>
 					<div class="but_rad">
-						<button onclick="modalBox()">Start with a Free Diagnostic</button>
+						<button onclick="toggleModal('modal-phone')">Start with a Free Diagnostic</button>
 					</div>
 				</div>
 			</section>
@@ -639,10 +680,7 @@
 										</tr>
 									</thead>
 									<tbody>
-										<tr
-											class="get__price-popup"
-											onclick="ym(96823870, 'reachGoal', 'button_10'); return true;"
-										>
+										<tr class="get__price-popup" data-position="1" onclick="toggleModal('modal-prise'); ym(96823870, 'reachGoal', 'button_10'); return true;">
 											<td>
 												<img
 													src="assets/img/price-1.f5cee29a.svg"
@@ -669,10 +707,7 @@
 												>
 											</td>
 										</tr>
-										<tr
-											class="get__price-popup"
-											onclick="ym(96823870, 'reachGoal', 'button_11'); return true;"
-										>
+										<tr class="get__price-popup" data-position="2" onclick="toggleModal('modal-prise'); ym(96823870, 'reachGoal', 'button_11'); return true;">
 											<td class="table__td">
 												<img
 													src="assets/img/price-2.bec89c42.svg"
@@ -699,10 +734,7 @@
 												>
 											</td>
 										</tr>
-										<tr
-											class="get__price-popup"
-											onclick="ym(96823870, 'reachGoal', 'button_12'); return true;"
-										>
+										<tr class="get__price-popup" data-position="3" onclick="toggleModal('modal-prise'); ym(96823870, 'reachGoal', 'button_12'); return true;" >
 											<td>
 												<img
 													src="assets/img/price-3.44313dcf.svg"
@@ -732,10 +764,7 @@
 												>
 											</td>
 										</tr>
-										<tr
-											class="get__price-popup"
-											onclick="ym(96823870, 'reachGoal', 'button_13'); return true;"
-										>
+										<tr class="get__price-popup" data-position="4" onclick="toggleModal('modal-prise'); ym(96823870, 'reachGoal', 'button_13'); return true;" >
 											<td class="table__td">
 												<img
 													src="assets/img/price-4.975c75cc.svg"
@@ -765,10 +794,7 @@
 												>
 											</td>
 										</tr>
-										<tr
-											class="get__price-popup"
-											onclick="ym(96823870, 'reachGoal', 'button_14'); return true;"
-										>
+										<tr class="get__price-popup" data-position="5" onclick="toggleModal('modal-prise'); ym(96823870, 'reachGoal', 'button_14'); return true;" >
 											<td>
 												<img
 													src="assets/img/price-5.11945fb9.svg"
@@ -798,10 +824,7 @@
 												>
 											</td>
 										</tr>
-										<tr
-											class="get__price-popup"
-											onclick="ym(96823870, 'reachGoal', 'button_15'); return true;"
-										>
+										<tr class="get__price-popup" data-position="6" onclick="toggleModal('modal-prise'); ym(96823870, 'reachGoal', 'button_15'); return true;" >
 											<td class="table__td">
 												<img
 													src="assets/img/price-6.f38d540a.svg"
@@ -831,10 +854,7 @@
 												>
 											</td>
 										</tr>
-										<tr
-											class="get__price-popup"
-											onclick="ym(96823870, 'reachGoal', 'button_16'); return true;"
-										>
+										<tr class="get__price-popup" data-position="7" onclick="toggleModal('modal-prise'); ym(96823870, 'reachGoal', 'button_16'); return true;" >
 											<td>
 												<img
 													src="assets/img/price-7.7c8d1f43.svg"
@@ -864,10 +884,7 @@
 												>
 											</td>
 										</tr>
-										<tr
-											class="get__price-popup"
-											onclick="ym(96823870, 'reachGoal', 'button_17'); return true;"
-										>
+										<tr class="get__price-popup" data-position="8" onclick="toggleModal('modal-prise'); ym(96823870, 'reachGoal', 'button_17'); return true;" >
 											<td class="table__td">
 												<img
 													src="assets/img/price-8.45533810.svg"
@@ -894,10 +911,7 @@
 												>
 											</td>
 										</tr>
-										<tr
-											class="get__price-popup"
-											onclick="ym(96823870, 'reachGoal', 'button_18'); return true;"
-										>
+										<tr class="get__price-popup" data-position="9" onclick="toggleModal('modal-prise'); ym(96823870, 'reachGoal', 'button_18'); return true;" >
 											<td>
 												<img
 													src="assets/img/price-9.41812850.svg"
@@ -952,7 +966,7 @@
 							<div class="price__exclam-btn">
 								<button
 									class="get__master btn__blue"
-									onclick="modalBox(); ym(96823870, 'reachGoal', 'button_20'); return true;">Contact us for more details
+									onclick="toggleModal('modal-phone'); ym(96823870, 'reachGoal', 'button_20'); return true;">Contact us for more details
 								</button>
 							</div>
 						</div>
@@ -1433,7 +1447,7 @@
 
 						<div class="feedback__links">
 							<div class="feedback__link-item">
-								<div class="but_rad" onclick="modalBoxWs()">
+								<div class="but_rad" onclick="toggleModal('modal-ws')">
 									<button style="text-wrap: balance">
 										Leave a review on WhatsApp
 									</button>
@@ -1581,7 +1595,7 @@
 
 						<div class="feedback__links">
 							<div class="feedback__link-item">
-								<div class="but_rad" onclick="modalBoxWs()">
+								<div class="but_rad" onclick="toggleModal('modal-ws')">
 									<button style="text-wrap: balance">
 										Share your experience
 									</button>
@@ -1821,7 +1835,7 @@
 								to your question? Contact us!
 							</p>
 							<div class="feedback__link-item">
-								<div class="but_rad btn2" onclick="modalBoxQuestion()">
+								<div class="but_rad btn2" onclick="toggleModal('modal-question')">
 									<button>Schedule a Free Diagnostic</button>
 								</div>
 							</div>
@@ -1833,274 +1847,270 @@
 				</div>
 			</section>
 
-			<section>
-				<div class="protect">
-					<div class="container">
-						<div class="protect__intro">
-							<h2 class="title__main title7">
-								Repair Warranty: Your<br >
-								<span style="color: rgba(33, 155, 224, 1)"
-									>Protection Against Accident</span
-								>
-							</h2>
-							<div class="strel">
-								<img src="assets/img/strel.cd89e6e9.svg" alt="arrows" >
-							</div>
-							<p class="base__subtitle">
-								We stand behind the quality of our work. <br >
-								A one-year warranty on all services and parts.
-							</p>
+			<section class="protect">
+				<div class="container">
+					<div class="protect__intro">
+						<h2 class="title__main title7">
+							Repair Warranty: Your<br >
+							<span style="color: rgba(33, 155, 224, 1)"
+								>Protection Against Accident</span
+							>
+						</h2>
+						<div class="strel">
+							<img src="assets/img/strel.cd89e6e9.svg" alt="arrows" >
 						</div>
-						<div class="protect__body">
-							<div class="protect__card">
-								<p class="titl">Duration:</p>
-								<p class="txt">
-									1 year from the completion<br >of the
-									repair.
-								</p>
-								<div class="protect__img">
-									<img
-										src="assets/img/protect-1.3cb4257a.svg"
-										alt="calendar"
-									>
-								</div>
-							</div>
-
-							<div class="protect__card">
-								<p class="titl">Coverage:</p>
-								<p class="txt">
-									All completed work and<br >installed parts.
-								</p>
-								<div class="protect__img">
-									<img
-										src="assets/img/protect-2.3e608e82.svg"
-										alt="shield"
-									>
-								</div>
-							</div>
-
-							<div class="protect__card">
-								<p class="titl">Exclusions:</p>
-								<p class="txt">
-									Damage due to improper use ofthe device,
-									natural disasters,and consumable items<br >(e.g.,
-									filters).
-								</p>
-								<div class="protect__img">
-									<img
-										src="assets/img/protect-3.7472e02d.svg"
-										alt="warning"
-									>
-								</div>
-							</div>
-						</div>
-						<p class="sub__titel">
-							In the event <br >
-							of a warranty claim:
+						<p class="base__subtitle">
+							We stand behind the quality of our work. <br >
+							A one-year warranty on all services and parts.
 						</p>
-						<div class="protect__body">
-							<div class="protect__card">
-								<p class="titl">Contact:</p>
-								<p class="txt">
-									Call
-									<a
-										href="tel:+18006244343"
-										style="
-											text-decoration: none;
-											color: rgba(33, 155, 224, 1);
-										"
-										>+1 800 624 43 43</a
-									>
-									<br >
-									or write to us on the website.
-								</p>
-								<div class="protect__img">
-									<img
-										src="assets/img/protect-4.7472e02d.svg"
-										alt="phone"
-									>
-								</div>
+					</div>
+					<div class="protect__body">
+						<div class="protect__card">
+							<p class="titl">Duration:</p>
+							<p class="txt">
+								1 year from the completion<br >of the
+								repair.
+							</p>
+							<div class="protect__img">
+								<img
+									src="assets/img/protect-1.3cb4257a.svg"
+									alt="calendar"
+								>
 							</div>
+						</div>
 
-							<div class="protect__card">
-								<p class="titl">Verification:</p>
-								<p class="txt">
-									Describe the problem, we confirm the
-									warranty case.
-								</p>
-								<div class="protect__img">
-									<img
-										src="assets/img/protect-5.f694e86d.svg"
-										alt="list"
-									>
-								</div>
+						<div class="protect__card">
+							<p class="titl">Coverage:</p>
+							<p class="txt">
+								All completed work and<br >installed parts.
+							</p>
+							<div class="protect__img">
+								<img
+									src="assets/img/protect-2.3e608e82.svg"
+									alt="shield"
+								>
 							</div>
+						</div>
 
-							<div class="protect__card">
-								<p class="titl">Duration:</p>
-								<p class="txt">
-									We organize free repair or <br >
-									replacement of parts.
-								</p>
-								<div class="protect__img">
-									<img
-										src="assets/img/protect-6.eff779b6.svg"
-										alt="wrench"
-									>
-								</div>
+						<div class="protect__card">
+							<p class="titl">Exclusions:</p>
+							<p class="txt">
+								Damage due to improper use ofthe device,
+								natural disasters,and consumable items<br >(e.g.,
+								filters).
+							</p>
+							<div class="protect__img">
+								<img
+									src="assets/img/protect-3.7472e02d.svg"
+									alt="warning"
+								>
+							</div>
+						</div>
+					</div>
+					<p class="sub__titel">
+						In the event <br >
+						of a warranty claim:
+					</p>
+					<div class="protect__body">
+						<div class="protect__card">
+							<p class="titl">Contact:</p>
+							<p class="txt">
+								Call
+								<a
+									href="tel:+18006244343"
+									style="
+										text-decoration: none;
+										color: rgba(33, 155, 224, 1);
+									"
+									>+1 800 624 43 43</a
+								>
+								<br >
+								or write to us on the website.
+							</p>
+							<div class="protect__img">
+								<img
+									src="assets/img/protect-4.7472e02d.svg"
+									alt="phone"
+								>
+							</div>
+						</div>
+
+						<div class="protect__card">
+							<p class="titl">Verification:</p>
+							<p class="txt">
+								Describe the problem, we confirm the
+								warranty case.
+							</p>
+							<div class="protect__img">
+								<img
+									src="assets/img/protect-5.f694e86d.svg"
+									alt="list"
+								>
+							</div>
+						</div>
+
+						<div class="protect__card">
+							<p class="titl">Duration:</p>
+							<p class="txt">
+								We organize free repair or <br >
+								replacement of parts.
+							</p>
+							<div class="protect__img">
+								<img
+									src="assets/img/protect-6.eff779b6.svg"
+									alt="wrench"
+								>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section>
-				<div class="technicians">
-					<div class="container">
-						<div class="technicians__head">
-							<h2 class="title__main">
-								Meet Our<br >
-								<span style="color: rgba(33, 155, 224, 1)"
-									>Technicians</span
-								>
-							</h2>
-							<div class="strel">
-								<img src="assets/img/strel.cd89e6e9.svg" alt="arrows" >
+			<section class="technicians">
+				<div class="container">
+					<div class="technicians__head">
+						<h2 class="title__main">
+							Meet Our<br >
+							<span style="color: rgba(33, 155, 224, 1)"
+								>Technicians</span
+							>
+						</h2>
+						<div class="strel">
+							<img src="assets/img/strel.cd89e6e9.svg" alt="arrows" >
+						</div>
+						<p class="base__subtitle">
+							Our team consists of highly qualified
+							professionals with deep knowledge and practical
+							experience in washing machine repair. We are
+							proud of each of our technicians and are ready
+							to introduce them to you.
+						</p>
+					</div>
+
+					<div class="technicians__body">
+						<div class="tech__cards">
+							<img
+								src="assets/img/technicians.c2e76700.webp"
+								alt="our client"
+								loading="lazy"
+							>
+							<div class="tech-body">
+								<p class="title">Robert Smith</p>
+								<p class="txt">
+									- Specialization: Electronics and
+									electromechanics. <br >
+									<br >
+									- Years of experience: Over 10 years.
+									<br >
+									<br >
+									- About me: I am passionate about repair
+									work and always strive for perfection in
+									every detail. In my free time, I study
+									the latest technologies in home
+									appliances.
+								</p>
 							</div>
-							<p class="base__subtitle">
-								Our team consists of highly qualified
-								professionals with deep knowledge and practical
-								experience in washing machine repair. We are
-								proud of each of our technicians and are ready
-								to introduce them to you.
-							</p>
 						</div>
 
-						<div class="technicians__body">
-							<div class="tech__cards">
-								<img
-									src="assets/img/technicians.c2e76700.webp"
-									alt="our client"
-									loading="lazy"
-								>
-								<div class="tech-body">
-									<p class="title">Robert Smith</p>
-									<p class="txt">
-										- Specialization: Electronics and
-										electromechanics. <br >
-										<br >
-										- Years of experience: Over 10 years.
-										<br >
-										<br >
-										- About me: I am passionate about repair
-										work and always strive for perfection in
-										every detail. In my free time, I study
-										the latest technologies in home
-										appliances.
-									</p>
-								</div>
-							</div>
-
-							<div class="tech__cards">
-								<img
-									src="assets/img/technicians.c2e76700.webp"
-									alt="our client"
-									loading="lazy"
-								>
-								<div class="tech-body">
-									<p class="title">Loki Rivers</p>
-									<p class="txt">
-										- Specialization: Hydraulics and pump
-										systems. <br ><br >
-										- Years of experience: 8 years.
-										<br ><br >
-										- About me: I love helping people bring
-										their appliances back to life. There's
-										nothing better than seeing the smiles of
-										gratitude on our clients' faces.
-									</p>
-								</div>
-							</div>
-
-							<div class="tech__cards">
-								<img
-									src="assets/img/technicians.c2e76700.webp"
-									alt="our client"
-									loading="lazy"
-								>
-								<div class="tech-body">
-									<p class="title">Michael Green</p>
-									<p class="txt">
-										- Specialization: Mechanical issues and
-										bearing replacement. <br ><br >
-										- Years of experience: 12 years.
-										<br ><br >
-										- About me: Repair work is like solving
-										a complex puzzle to me. I won't stop
-										until I find the best solution.
-									</p>
-								</div>
-							</div>
-
-							<div class="tech__cards">
-								<img
-									src="assets/img/technicians.c2e76700.webp"
-									alt="our client"
-									loading="lazy"
-								>
-								<div class="tech-body">
-									<p class="title">Robert Smith</p>
-									<p class="txt">
-										- Specialization: Electronics and
-										electromechanics. <br >
-										<br >
-										- Years of experience: Over 10 years.
-										<br >
-										<br >
-										- About me: I am passionate about repair
-										work and always strive for perfection in
-										every detail. In my free time, I study
-										the latest technologies in home
-										appliances.
-									</p>
-								</div>
-							</div>
-
-							<div class="tech__cards">
-								<img
-									src="assets/img/technicians.c2e76700.webp"
-									alt="our client"
-									loading="lazy"
-								>
-								<div class="tech-body">
-									<p class="title">Loki Rivers</p>
-									<p class="txt">
-										- Specialization: Hydraulics and pump
-										systems. <br ><br >
-										- Years of experience: 8 years.
-										<br ><br >
-										- About me: I love helping people bring
-										their appliances back to life. There's
-										nothing better than seeing the smiles of
-										gratitude on our clients' faces.
-									</p>
-								</div>
+						<div class="tech__cards">
+							<img
+								src="assets/img/technicians.c2e76700.webp"
+								alt="our client"
+								loading="lazy"
+							>
+							<div class="tech-body">
+								<p class="title">Loki Rivers</p>
+								<p class="txt">
+									- Specialization: Hydraulics and pump
+									systems. <br ><br >
+									- Years of experience: 8 years.
+									<br ><br >
+									- About me: I love helping people bring
+									their appliances back to life. There's
+									nothing better than seeing the smiles of
+									gratitude on our clients' faces.
+								</p>
 							</div>
 						</div>
-						<div class="technicians__footer">
-							<p>
-								In our team, only the best of the best. We
-								continuously undergo training and certification
-								to ensure we offer you the highest quality
-								services.
-							</p>
 
-							<div class="but_rad">
-								<button onclick="modalBox()">
-									Call a <br >
-									technician
-								</button>
+						<div class="tech__cards">
+							<img
+								src="assets/img/technicians.c2e76700.webp"
+								alt="our client"
+								loading="lazy"
+							>
+							<div class="tech-body">
+								<p class="title">Michael Green</p>
+								<p class="txt">
+									- Specialization: Mechanical issues and
+									bearing replacement. <br ><br >
+									- Years of experience: 12 years.
+									<br ><br >
+									- About me: Repair work is like solving
+									a complex puzzle to me. I won't stop
+									until I find the best solution.
+								</p>
 							</div>
+						</div>
+
+						<div class="tech__cards">
+							<img
+								src="assets/img/technicians.c2e76700.webp"
+								alt="our client"
+								loading="lazy"
+							>
+							<div class="tech-body">
+								<p class="title">Robert Smith</p>
+								<p class="txt">
+									- Specialization: Electronics and
+									electromechanics. <br >
+									<br >
+									- Years of experience: Over 10 years.
+									<br >
+									<br >
+									- About me: I am passionate about repair
+									work and always strive for perfection in
+									every detail. In my free time, I study
+									the latest technologies in home
+									appliances.
+								</p>
+							</div>
+						</div>
+
+						<div class="tech__cards">
+							<img
+								src="assets/img/technicians.c2e76700.webp"
+								alt="our client"
+								loading="lazy"
+							>
+							<div class="tech-body">
+								<p class="title">Loki Rivers</p>
+								<p class="txt">
+									- Specialization: Hydraulics and pump
+									systems. <br ><br >
+									- Years of experience: 8 years.
+									<br ><br >
+									- About me: I love helping people bring
+									their appliances back to life. There's
+									nothing better than seeing the smiles of
+									gratitude on our clients' faces.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="technicians__footer">
+						<p>
+							In our team, only the best of the best. We
+							continuously undergo training and certification
+							to ensure we offer you the highest quality
+							services.
+						</p>
+
+						<div class="but_rad">
+							<button onclick="toggleModal('modal-phone')">
+								Call a <br >
+								technician
+							</button>
 						</div>
 					</div>
 				</div>
@@ -2269,38 +2279,12 @@
 
 		<script src="assets/js/accordion.94497a48.js"></script>
 		<script src="assets/js/slider.10a673f3.js"></script>
+		<script src="assets/js/price.ada89fef.js"></script>
 
 		<script>
-			const modalPhone = document.getElementById('modal-phone');
-
-			function modalBox() {
-				if (modalPhone.style.display === 'none') {
-					modalPhone.style.display = 'block'
-				} else {
-					modalPhone.style.display = 'none'
-				}
-			}
-		</script>
-		<script>
-			const modalWs = document.getElementById('modal-ws');
-			
-			function modalBoxWs() {
-				if (modalWs.style.display === 'none') {
-					modalWs.style.display = 'block'
-				} else {
-					modalWs.style.display = 'none'
-				}
-			}
-		</script>
-		<script>
-			const modalQuestion = document.getElementById('modal-question');
-			
-			function modalBoxQuestion() {
-				if (modalQuestion.style.display === 'none') {
-					modalQuestion.style.display = 'block'
-				} else {
-					modalQuestion.style.display = 'none'
-				}
+			function toggleModal(modalId) {
+				const modal = document.getElementById(modalId);
+				modal.style.display = modal.style.display === 'none' ? 'block' : 'none';
 			}
 		</script>
 	</body>
